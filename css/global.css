@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+input {
+    /*width: 50%;*/
+    font-size: 20px;
+    padding: 20px;
+}
+.test{
+    /*width: 296px;*/
+    width:27vw;
+}
+body {
+    padding: 40px;
+}
+/*.container-fluid {
+    background-color: lightgray;
+}
+/*.card {*/
+    /*max-width: 300px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    background: #fff;
+    display: inline-block;
+}
+.card-caption {
+    text-align: center;
+}*/*/
+/*.col-sm-3 {
+    background-color: lightcoral;
+}
+.col-sm-9 {
+    padding: 20px;
+    margin: 30px;
+}
+.panel {
+    padding: 20px;
+    margin: 10px;
+}
+.container-fluid {
+    padding-top: 60px;
+}*/
+.sideBar {
+    border: 1px solid lightpink;
+}
+.boardGames {
+    border: 1px solid lightblue;
+}
+li {
+    display: inline;
+    border: 1px solid gray;
+    padding: 16px;
+    margin: 1px;
+    font-size: 14px;
+}
+.thisThing {
+    padding: 3px;
+    margin: 2px;
+}

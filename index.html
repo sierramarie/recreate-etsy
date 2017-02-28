@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+    <!--header-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 thisThing">
+                <img src="img/Etsy_logo.png"/>
+            </div>
+            <div class="col-sm-5 thisThing">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <ul>
+            <li>Clothing & Accessories</li>
+            <li>Jewelry</li>
+            <li>Craft Supplies & Tools</li>
+            <li>Weddings</li>
+            <li>Entertainment</li>
+            <li>Home & Living</li>
+            <li>Kids & Baby</li>
+            <li>Vintage</li>
+        </ul>
+    </div>
+    <hr>
+<!--left-side bar & search result cards-->
+
+    <div class="container-fluid well">
+        <div class="row">
+            <div class="col-sm-3 sideBar">
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">All Categories</h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#">Toys & Games</a><br/> <hr>
+                            <a href="#">Art & Collectibles</a><br/> <hr>
+                            <a href="#">Craft Supplies & Tools</a><br/> <hr>
+                            <a href="#">Home & Living</a><br/> <hr>
+                            <a href="#">Paper & Party Supplies</a><br/> <hr>
+                            <a href="#">Books, Movies & Music</a><br/> <hr>
+                            <a href="#">Accessories</a><br/> <hr>
+                            <a href="#">Clothing</a><br/> <hr>
+                            <a href="#">Electronics & Accessories</a><br/> <hr>
+                            <a href="#">Jewelery</a><br/> <hr>
+                            <a href="#">Wedding</a><br/> <hr>
+                            <a href="#">Bags & Purses</a><br/> <hr>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Refine Your Search</h3>
+                        </div>
+                        <div class="panel-body">
+                        <h5>Shop Location</h5><br/>
+                        <input type="radio" id="Anywhere"/>
+                        <label><a href="#">Anywhere</a></label><br/>
+                        <input type="radio" id="unitedStates"/>
+                        <label><a href="#">United States</a></label><br/>
+                        <hr>
+                        <h5>Item Type</h5>
+                        <input type="radio" id="allItems"/>
+                        <label><a href="#">All Items</a></label><br/>
+                        <input type="radio" id="handMade"/>
+                        <label><a href="#">Handmade</a></label><br/>
+                        <input type="radio" id="vintage"/>
+                        <label><a href="#">Vintage</a></label><br/>  
+                        <hr>
+                        <h5>Prices($)</h5>
+                        <input type="radio" id="anyPrice"/>
+                        <label><a href="#">Any Price</a></label><br/>
+                        <input type="radio" id="under25"/>
+                        <label><a href="#">Under $25</a></label><br/>
+                        <input type="radio" id="rangeOne"/>
+                        <label><a href="#">$25 to $50</a></label><br/>
+                        <input type="radio" id="rangeTwo"/>
+                        <label><a href="#">$50 to $100</a></label><br/>
+                        <input type="radio" id="over"/>
+                        <label><a href="#">Over $100</a></label><br/>
+
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-9 boardGames">
+                <div class="row">
+                    <div class="col-sm-3">          
+                         board game
+                    </div> 
+                    <div class="col-sm-3">
+                        another board game
+                    </div>
+                    <div class="col-sm-3">
+                        and another board game 
+                    </div>
+                    <div class="col-sm-3">
+                        all of the board games
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/global.js"></script>
+</body>
+</html>
