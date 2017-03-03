@@ -1,10 +1,23 @@
 // Rebuild an Etsy search results page using HTML, CSS, & a JavaScript function that creates and displays each result using an object. This assignment requires that you know how to work with the DOM.
+
+
 var etsy = {};
+
+document.querySelector('#searchButton').addEventListener('click', getData);
+document.querySelector('#searchTerm').addEventListener('keypress', function(e){ 
+    if (e.key === 'Enter') {
+        getData();
+    }
+});
+
 
 getData();
 
 function getData() {
-    fetch('https://thinksaydo.com/tiyproxy.php?https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent('board games') + '&includes=Images,Shop')
+    var searchTerm = document.querySelector('#searchTerm').value;
+
+    if (searchTerm !== '') {
+    fetch('https://thinksaydo.com/tiyproxy.php?https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent(searchTerm) + '&includes=Images,Shop')
         .then(response => response.json())
         .then(data => {
             etsy = data;
@@ -16,6 +29,7 @@ function getData() {
 }
 
 function renderItemCard() {
+    document.querySelector('#cards').innerHTML = '';
     etsy.results.forEach(createSearchResultCard)
 }
 
@@ -46,3 +60,9 @@ function createSearchResultCard(data) {
 
     document.querySelector('#cards').innerHTML += card;
 }
+
+// function searchEtsy() {
+//     fetch('https://thinksaydo.com/tiyproxy.php?https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent('board games') + '&includes=Images,Shop')
+//         .then(response => response.json())
+//         .then(createSearchResultCard)
+// });
